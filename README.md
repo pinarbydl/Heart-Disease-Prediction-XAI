@@ -64,11 +64,12 @@ En iyi performansı gösteren CatBoost modeli, GridSearchCV yöntemi ile optimiz
 
 Model tahminlerini anlamlandırmak için şu XAI yöntemleri kullanılmıştır:
 
+- **Permutation Importance:** Bir özelliğin değerleri karıştırılarak modelin performansındaki değişime bakılır. Performans düşüşü, o özelliğin önem derecesini gösterir.
+
 - **SHAP (SHapley Additive exPlanations):** Oyun teorisine dayalı olarak her bir özelliğin modele katkısını hesaplar. Hem genel (summary plot) hem de bireysel (waterfall plot) açıklamalar sağlar.
 
 - **LIME (Local Interpretable Model-agnostic Explanations):** Herhangi bir modelin tekil bir tahminini yerel olarak yorumlar. Belirli bir tahminin neden verildiğini ve hangi özelliklerin etkili olduğunu görselleştirir.
 
-- **Permutation Importance:** Bir özelliğin değerleri karıştırılarak modelin performansındaki değişime bakılır. Performans düşüşü, o özelliğin önem derecesini gösterir.
 
 ---
 
@@ -147,11 +148,11 @@ The best-performing model (CatBoost) was further optimized using GridSearchCV.
 
 To interpret the model predictions, the following XAI techniques were applied:
 
+- **Permutation Importance:** Assesses feature importance by measuring the decrease in model performance when feature values are randomly shuffled.
+
 - **SHAP (SHapley Additive exPlanations):** Based on game theory, SHAP calculates the contribution of each feature to the model's output. It provides both global (summary plot) and local (waterfall plot) explanations.
 
 - **LIME (Local Interpretable Model-agnostic Explanations):** Interprets individual predictions of any machine learning model locally, showing which features were most important for a specific prediction.
-
-- **Permutation Importance:** Assesses feature importance by measuring the decrease in model performance when feature values are randomly shuffled.
 
 ---
 ## 📈 Results
